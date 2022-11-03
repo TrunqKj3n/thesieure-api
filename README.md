@@ -2,7 +2,7 @@
 ```
 Method : POST
 
-## Params
+<-- Params -->
 TYPE | COOKIES
 
 TYPE: in = nhận, out = chuyển
