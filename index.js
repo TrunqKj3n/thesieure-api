@@ -1,15 +1,11 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const app = express();
-const controller = require('./controllers/index.js');
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-controller(app);
-
 
 app.get('/', (req, res) => {
     res.json("THESIEURE API MADE BY TTK")
